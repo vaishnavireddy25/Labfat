@@ -7,9 +7,9 @@
 - 7
 - 2025
 
-##COURSE ID
-  -CSI3025
-  -Application Development Deployment Architecture
+## COURSE ID
+  - CSI3025
+  - Application Development Deployment Architecture
 
 ## REPO
   -Labfat
