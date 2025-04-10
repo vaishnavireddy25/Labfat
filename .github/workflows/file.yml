@@ -21,9 +21,10 @@ jobs:
           node-version: '16'
 
       - name: Generate Table of Contents
-        uses: actions/markdown-toc@v1
+        uses: technote-space/auto-toc@v3
         with:
-           file_glob: 'MarkdownFile'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
 
       - name: Commit and push changes
         run: |
