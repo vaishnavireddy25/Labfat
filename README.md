@@ -16,7 +16,7 @@ This project uses GitHub Actions to automate the creation of a table of contents
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/vaishnavireddy25/https://github.com/vaishnavireddy25/Labfat.git
+   git clone https://github.com/vaishnavireddy25/Labfat.git
    ```
 2. Make changes to any Markdown file.
 3. Push your changes to trigger the workflow.
