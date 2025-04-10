@@ -26,10 +26,15 @@ jobs:
 
       
       - name: Generate TOC
-        run: markdown-toc -i README.md
+        run: |
+          for file in $(find docs -name "**.md"); do
+            markdown-toc -i "$file"
+          done
 
      
       - name: Commit and push changes
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
